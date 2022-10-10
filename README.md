@@ -24,7 +24,7 @@ The following links will take you to the package in `src/main/java` and, where r
 
 - Topic 2: JavaFX
     - [Code](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic2)
-    - [Resources](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/resources/uk/ac/rgu/topic2)
+    - [FXML files](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/resources/uk/ac/rgu/topic2)
 
 - Topic 3: Inheritance, abstract classes, and polymorphism
     - [Code](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic3)
