@@ -28,7 +28,7 @@ The disadvantage of this approach is that you can't commit and push your own cha
 
 Forking the repo means an exact copy will be created in a new repo in your own GitHub account. This will allow you to push any changes you make (e.g., working on the suggested exercises). To fork the repo, click the **Fork** button in the top-right of the repo. Follow the instructions on the next page to create the fork. When done, you'll be taken to the forked repo. This is what you should now clone and work on.
 
-To sync the changes from the main repo each week, visit your repo on GitHub and click the **Sync fork** button (under the green **Code** button). This will inform you of any changes that you can sync.
+To sync the changes from the main repo each week, visit your repo on GitHub and click the **Sync fork** button (under the green **Code** button), then click the **Update branch** button (if there's no updates, you'll see a message informing you of this).
 
 ## Topic listing
 
