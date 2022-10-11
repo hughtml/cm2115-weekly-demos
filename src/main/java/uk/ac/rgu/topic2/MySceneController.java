@@ -20,7 +20,8 @@ public class MySceneController {
      * For a Controller class to use a component in a Scene, the component must be here as a field.
      * The name of the field must match the fx:id provided in the Code panel of the Scene Builder.
      * Components also need the @FXML annotation so the compiler knows they are referring to a component 
-     * in an FXML file.
+     * in an FXML file. If you don't add @FXML, or the name doesn't match an fx:id, you'll get a NullPointerException
+     * when trying to use the field.
      */
     @FXML 
     private Button btnMyButton;
@@ -36,5 +37,4 @@ public class MySceneController {
     private void btnMyButtonOnClick(){
         this.lblMessage.setText("Hello world");
     }
-
 }
