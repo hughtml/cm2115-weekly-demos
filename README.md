@@ -10,6 +10,8 @@ Note that this isn't an alternative to the weekly Smart Home project, which you 
 
 Each topic is in its own package, within the `uk.ac.rgu` package (e.g., topic 2 is in `uk.ac.rgu.topic2`). Within each package, you'll find classes similar to those written during the demo, plus an `App` class. The `App` class for each topic contains a `main()` method allowing you to run each topic's demo in isolation.
 
+Note that in the class demo, we might re-use classes and/or other code from a previous week (e.g., the demo for topic4 buildes on classes from topic3). In this repo, the topics are made standalone - but any re-used classes are included in the relevant topic folder (so the Animal class from topic3 is also in topic4, etc.).
+
 ## Exercises
 
 At the top of each `App` class is a set of suggested exercises for you to expand the demo. These are entirely optional, and designed to allow you to consolidate your understanding. 
@@ -40,3 +42,7 @@ The following links will take you to the package in `src/main/java` and, where r
 
 - Topic 3: Inheritance, abstract classes, and polymorphism
     - [Code](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic3)
+
+- Topic 4: Interfaces
+    - [Code (main topic)](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic4)
+    - [Code (functional interfaces)](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic4/functionalinterfaces)

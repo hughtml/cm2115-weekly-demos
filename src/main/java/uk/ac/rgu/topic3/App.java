@@ -23,41 +23,43 @@ public class App {
     
     public static void main(String[] args){
 
-        Cat cat = new Cat("Felix");
-        Dog dog = new Dog("Fido");
+        
 
-        /**
-         * Polymorphism allows us to use a sub-class in place of a super class (i.e., the class that is extended)
-         * So in this case, because the Cat and Dog classes both extend Animal, we can provide a Cat or Dog object
-         * whenever an Animal is expected
-         */
-        acceptAnimal(cat);
-        acceptAnimal(dog);
+        // Cat cat = new Cat("Felix");
+        // Dog dog = new Dog("Fido");
 
-        /**
-         * Polymorphism also allows us to assign variables declared as a super class (so in this case Animal) to
-         * objects of a sub-type (so in this case, Cat or Dog). We can re-assign the variable to any of the sub-types.
-         */
-        Animal animal = new Cat("Garfield");
-        animal = new Dog("Odie");
+        // /**
+        //  * Polymorphism allows us to use a sub-class in place of a super class (i.e., the class that is extended)
+        //  * So in this case, because the Cat and Dog classes both extend Animal, we can provide a Cat or Dog object
+        //  * whenever an Animal is expected
+        //  */
+        // acceptAnimal(cat);
+        // acceptAnimal(dog);
 
-        /**
-         * The main use of polymorphism in this way is to be able to store multiple related objects
-         * in a single array
-         */
-         Animal[] animals = new Animal[2];
-         animals[0] = new Cat("Crookshanks");
-         animals[1] = new Dog("Gnasher");
+        // /**
+        //  * Polymorphism also allows us to assign variables declared as a super class (so in this case Animal) to
+        //  * objects of a sub-type (so in this case, Cat or Dog). We can re-assign the variable to any of the sub-types.
+        //  */
+        // Animal animal = new Cat("Garfield");
+        // animal = new Dog("Odie");
 
-         /* However, as also explained in the acceptAnimal() method below, we lose the ability to call
-          * methods only defined in the sub-class, i.e.
-                animals[0].useLitterTray()
-            is not allowed, because we only know we have an animal; we don't know that it's a Cat
-            We can only call methods declared in the Animal class
-          */
+        // /**
+        //  * The main use of polymorphism in this way is to be able to store multiple related objects
+        //  * in a single array
+        //  */
+        //  Animal[] animals = new Animal[2];
+        //  animals[0] = new Cat("Crookshanks");
+        //  animals[1] = new Dog("Gnasher");
 
-          System.out.println(animals[0].makeSound());
-          System.out.println(animals[1].makeSound());
+        //  /* However, as also explained in the acceptAnimal() method below, we lose the ability to call
+        //   * methods only defined in the sub-class, i.e.
+        //         animals[0].useLitterTray()
+        //     is not allowed, because we only know we have an animal; we don't know that it's a Cat
+        //     We can only call methods declared in the Animal class
+        //   */
+
+        //   System.out.println(animals[0].makeSound());
+        //   System.out.println(animals[1].makeSound());
 
     }
 

@@ -1,6 +1,8 @@
-package uk.ac.rgu.topic3;
+package uk.ac.rgu.topic4;
 
 /**
+ * This is the same Animal class as last week, re-used here (with the same notes)
+ * 
  * Declaring a class as 'abstract' means that it can't be instantiated, i.e.
  *      Animal animal = new Animal();
  * is invalid. Abstract classes are used when you want to encapsulate aspects
@@ -34,7 +36,4 @@ public abstract class Animal {
      * @return
      */
     public abstract String makeSound();
-
-
-
 }
