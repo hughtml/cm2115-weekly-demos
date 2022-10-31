@@ -46,3 +46,6 @@ The following links will take you to the package in `src/main/java` and, where r
 - Topic 4: Interfaces
     - [Code (main topic)](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic4)
     - [Code (functional interfaces)](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic4/functionalinterfaces)
+
+- Topic 5: Advanced Java Concepts
+    - [Code](https://github.com/RobertGordonUniversity/cm2115-weekly-demos/tree/main/src/main/java/uk/ac/rgu/topic5)
