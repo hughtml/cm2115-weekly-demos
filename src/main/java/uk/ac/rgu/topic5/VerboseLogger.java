@@ -8,6 +8,7 @@ public class VerboseLogger implements Logger {
     //---------- FIELDS ----------
 
     private static VerboseLogger instance = null;
+    private int numTimesUsed = 0;
 
     //---------- CONSTRUCTORS ----------
 
@@ -29,7 +30,8 @@ public class VerboseLogger implements Logger {
     }
 
     public void log(String message) {
-        System.out.println("Verbose Logger: "  + message);
+        numTimesUsed++;
+        System.out.println("Verbose Logger: "  + message + "; Used " + numTimesUsed + " times");
     }
 
 }

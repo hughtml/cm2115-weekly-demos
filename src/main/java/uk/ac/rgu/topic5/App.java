@@ -1,25 +1,64 @@
 package uk.ac.rgu.topic5;
 
+import java.util.jar.Manifest;
+
 import uk.ac.rgu.topic5.Laptop.LaptopBattery;
 
 
 public class App {
+
     
     //----- Lab -----
 
     private Logger logger;
-            
+    private static Command[] commands = new Command[10];
+    private String[] words = {"These", "are", "some", "defined", "words"};
+
+    public void printWords (PrintStrategy printing) {
+        printing.print(words);
+    }   
+
     public void setLogger(Logger logger) {
         this.logger = logger;
     }
 
     public void doSomething() {
-        if (this.logger != null) {
-            logger.log("I'm doing something!");
-        }
+        // if (this.logger != null) {
+        //     logger.log("I'm doing something!");
+        // }
+        System.out.println("Doing something!");
     }
 
     public static void main(String[] args){
+
+        // App app = new App();
+        // VerboseLogger vLogger = VerboseLogger.getInstance();
+        // app.setLogger(vLogger);
+        // app.doSomething();
+
+        // App app2 = new App();
+        // VerboseLogger vLogger2 = VerboseLogger.getInstance();
+        // app2.setLogger(vLogger2);
+        // app2.doSomething();
+
+        App app = new App();
+        Computer computer = new Computer();
+        Command doSomethingCommand = new AppCommand(app);
+        commands[0] = doSomethingCommand;
+        commands[1] = computer::turnOn;
+
+        for (Command command : commands) {
+            command.execute();
+        }
+
+        ForwardsPrintStrategy printForwards = new ForwardsPrintStrategy();
+        PrintStrategy printBackwards = (values) -> {
+            for (int i = values.length; i > 0; i--) {
+                System.out.println(values[i]);
+            }
+        };
+        
+
 
         /* The LaptopBattery inner class is public and static in Laptop - so we can create an instance directly */
         LaptopBattery battery = new LaptopBattery(2000, "Li-ion");
