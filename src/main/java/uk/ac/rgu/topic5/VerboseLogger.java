@@ -1,8 +1,13 @@
 package uk.ac.rgu.topic5;
 
+/**
+ * Singleton class to define a Verbose Logger
+ */
 public class VerboseLogger implements Logger {
  
     //---------- FIELDS ----------
+
+    private static VerboseLogger instance = null;
 
     //---------- CONSTRUCTORS ----------
 
@@ -12,8 +17,19 @@ public class VerboseLogger implements Logger {
 
     //---------- OTHER METHODS ----------
 
-    public void log(String message) {
+    /**
+     * Singleton method to return the instance of the logger
+     * @return The VerboseLogger instance
+     */
+    public static VerboseLogger getInstance() {
+        if (instance == null) {
+            instance = new VerboseLogger();
+        } 
+        return instance;
+    }
 
+    public void log(String message) {
+        System.out.println("Verbose Logger: "  + message);
     }
 
 }
