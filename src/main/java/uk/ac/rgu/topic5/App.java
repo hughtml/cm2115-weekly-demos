@@ -2,8 +2,23 @@ package uk.ac.rgu.topic5;
 
 import uk.ac.rgu.topic5.Laptop.LaptopBattery;
 
+
 public class App {
     
+    //----- Lab -----
+
+    private Logger logger;
+            
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
+
+    public void doSomething() {
+        if (this.logger != null) {
+            logger.log("I'm doing something!");
+        }
+    }
+
     public static void main(String[] args){
 
         /* The LaptopBattery inner class is public and static in Laptop - so we can create an instance directly */
@@ -30,9 +45,6 @@ public class App {
         /* But the version fields for the other enum values will be their default values */
         System.out.println(OperatingSystem.WINDOWS.getVersion()); // 11
         System.out.println(OperatingSystem.UBUNTU.getVersion()); // 20
-
-
-
 
     }
 
